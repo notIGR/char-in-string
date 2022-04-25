@@ -6,13 +6,18 @@
 
 const testString = "hello world";
 const testChar = "o";
+const testStringWords= testString.split("")
+console.log(testStringWords)
+
+
+
 // expected result with these should be 2 occurences
 
 // DO NOT change the name of this function
 // This function should accept a string (a) 
 // and a character (b) as a parameter
 // and return the number of occurrences
-const countOccurencesInString = (a, b) => {
+const countOccurencesInString = (testStringWords, b) => {
 let num = 0;
 for(let i = 0; i <a.length; i++) {
 	if(a[i] === b) {
@@ -22,6 +27,8 @@ for(let i = 0; i <a.length; i++) {
 return num;
 	// return the number of occurrences
 }
+
+
 
 // Don't touch this either
 module.exports = countOccurencesInString;
